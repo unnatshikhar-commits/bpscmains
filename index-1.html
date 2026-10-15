@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>72nd BPSC Mains Answer Writing & Evaluation Portal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --crimson: #b80028;
+      --royal-magenta: #7a003c;
+      --deep-plum: #3d0043;
+      --gold: #ffb703;
+      --gold-hover: #fb8500;
+      --tg-cyan: #0096c7;
+      --tg-bright: #00b4d8;
+      --emerald: #10b981;
+      --coral: #f43f5e;
+    }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(180deg, #fdf4f7 0%, #f3f6fb 50%, #eef2f9 100%);
+      color: #1e293b;
+    }
+    .hero-gradient {
+      background: linear-gradient(135deg, #b80028 0%, #7a003c 50%, #3d0043 100%);
+    }
+    .topbar-gradient {
+      background: linear-gradient(90deg, #2b0030 0%, #59002c 50%, #2b0030 100%);
+    }
+    .btn-gold-vibrant {
+      background: linear-gradient(135deg, #ffb703 0%, #fb8500 100%);
+      color: #111827;
+      box-shadow: 0 6px 20px -3px rgba(251, 133, 0, 0.45);
+      transition: all 0.2s ease;
+    }
+    .btn-gold-vibrant:hover {
+      background: linear-gradient(135deg, #ffc333 0%, #e07200 100%);
+      transform: translateY(-1px);
+      box-shadow: 0 10px 25px -4px rgba(251, 133, 0, 0.6);
+    }
+    .btn-tg-vibrant {
+      background: linear-gradient(135deg, #00b4d8 0%, #0077b6 100%);
+      color: #ffffff;
+      box-shadow: 0 6px 20px -3px rgba(0, 150, 199, 0.45);
+      transition: all 0.2s ease;
+    }
+    .btn-tg-vibrant:hover {
+      background: linear-gradient(135deg, #22c5e8 0%, #006299 100%);
+      transform: translateY(-1px);
+      box-shadow: 0 10px 25px -4px rgba(0, 150, 199, 0.6);
+    }
+    .vibrant-card {
+      background: #ffffff;
+      border-radius: 1rem;
+      box-shadow: 0 10px 30px -10px rgba(122, 0, 60, 0.08), 0 4px 12px -2px rgba(15, 23, 42, 0.04);
+    }
+    /* Custom Scrollbar for Guide Column */
+    .guide-scroll::-webkit-scrollbar {
+      width: 6px;
+    }
+    .guide-scroll::-webkit-scrollbar-track {
+      background: #f8fafc;
+      border-radius: 8px;
+    }
+    .guide-scroll::-webkit-scrollbar-thumb {
+      background: #d8b4fe;
+      border-radius: 8px;
+    }
+    .guide-scroll::-webkit-scrollbar-thumb:hover {
+      background: #a855f7;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- TOP CONTACT & STATUS BAR -->
+  <div class="topbar-gradient text-white text-xs sm:text-sm py-2.5 px-4 border-b border-pink-500/30">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-400 shadow-[0_0_8px_#34d399] animate-pulse"></span>
+        <span class="font-semibold tracking-wide text-pink-100">72nd BPSC Mains Evaluation Batch:</span>
+        <span class="bg-amber-400/20 text-amber-300 border border-amber-400/40 px-2 py-0.5 rounded-full font-bold text-xs">
+          Thrice-Weekly Submissions Active
+        </span>
+      </div>
+      <div class="flex flex-wrap items-center gap-4">
+        <a id="top-telegram-link" href="#" target="_blank" rel="noopener" class="hover:text-cyan-300 transition flex items-center gap-1.5 font-medium">
+          <svg class="w-4 h-4 fill-current text-cyan-400" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/></svg>
+          <span>Join Telegram</span>
+        </a>
+        <span class="opacity-30">|</span>
+        <a id="top-email-link" href="#" class="hover:text-amber-300 transition flex items-center gap-1.5 font-medium">
+          <svg class="w-4 h-4 stroke-current text-amber-400" fill="none" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          <span id="top-email-text">mentor@bpscmains.in</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- VIBRANT HERO HEADER -->
+  <header class="hero-gradient text-white py-10 px-4 border-b-4 border-[#ffb703] shadow-xl relative overflow-hidden">
+    <div class="max-w-7xl mx-auto text-center relative z-10">
+      <div class="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm text-[#ffb703] text-xs font-extrabold uppercase tracking-widest px-4 py-1.5 rounded-full mb-3 border border-[#ffb703]/40 shadow-sm">
+        <span>★ Target 72nd BPSC Mains Exam ★</span>
+      </div>
+      <h1 class="text-2xl sm:text-4xl md:text-5xl font-black tracking-tight mb-3 drop-shadow">
+        BPSC Mains Answer Writing &amp; Evaluation Portal
+      </h1>
+      <p class="text-sm sm:text-base text-pink-100 max-w-2xl mx-auto font-medium">
+        Thrice-Weekly PDF Answer Submissions • Evidence-Based Examiner Tick Evaluation • 736+ Evaluated Pages Strategy
+      </p>
+    </div>
+  </header>
+
+  <!-- ADMIN NOTICE BANNER (Only shows if placeholder links are still default) -->
+  <div id="config-notice" class="hidden bg-gradient-to-r from-amber-100 via-yellow-50 to-amber-100 border-b border-amber-300 px-4 py-3 text-amber-950 text-sm">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <svg class="w-5 h-5 text-amber-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+        <span><strong>Admin Setup Reminder:</strong> Update your Google Form, Telegram, and Email links inside the <code class="bg-amber-200/80 px-1.5 py-0.5 rounded font-mono text-xs font-bold">CONFIG</code> block at the bottom of <code class="bg-amber-200/80 px-1.5 py-0.5 rounded font-mono text-xs font-bold">index.html</code> before sharing.</span>
+      </div>
+      <button onclick="document.getElementById('config-notice').style.display='none'" class="text-xs font-bold bg-amber-200 hover:bg-amber-300 text-amber-900 px-3 py-1 rounded-md transition shrink-0">Dismiss</button>
+    </div>
+  </div>
+
+  <!-- MAIN TWO-COLUMN WORKSPACE -->
+  <main class="max-w-7xl w-full mx-auto px-4 sm:px-6 py-8 flex-grow">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+      <!-- ===================================================================== -->
+      <!-- LEFT COLUMN: JOIN/SUBMIT, 4-STEP WORKFLOW & HYGIENE RULES (6 Cols)    -->
+      <!-- ===================================================================== -->
+      <div class="lg:col-span-6 space-y-6">
+
+        <!-- 1. SUBMIT ANSWERS & JOIN CARD -->
+        <section class="vibrant-card border border-pink-100 border-t-4 border-t-[#b80028] p-6">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+            <h2 class="text-xl font-extrabold text-[#b80028] flex items-center gap-2">
+              <span class="p-2 rounded-lg bg-rose-100 text-[#b80028]">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+              </span>
+              Submit Answer PDF &amp; Join Community
+            </h2>
+            <span class="text-xs font-extrabold px-3 py-1 rounded-full bg-gradient-to-r from-amber-100 to-orange-100 text-orange-900 border border-orange-300">
+              3 Submissions / Week
+            </span>
+          </div>
+
+          <p class="text-slate-600 text-sm mb-5 leading-relaxed">
+            Submit your handwritten scanned answer sheet PDF thrice a week for detailed examiner-style tick evaluation. Join our official Telegram group for question drops, model hints, and evaluated copy discussions.
+          </p>
+
+          <!-- Primary CTA Buttons -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mb-4">
+            <!-- Google Form PDF Upload Button -->
+            <a id="btn-register" href="#" target="_blank" rel="noopener" class="btn-gold-vibrant font-extrabold py-3.5 px-5 rounded-xl flex items-center justify-center gap-2.5 text-sm sm:text-base">
+              <svg class="w-5 h-5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+              <span>Upload Answer PDF (Form)</span>
+            </a>
+
+            <!-- Telegram Group Button -->
+            <a id="btn-telegram" href="#" target="_blank" rel="noopener" class="btn-tg-vibrant font-extrabold py-3.5 px-5 rounded-xl flex items-center justify-center gap-2.5 text-sm sm:text-base">
+              <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/></svg>
+              <span>Join Telegram Group</span>
+            </a>
+          </div>
+
+          <!-- Optional Embedded Form Button & Container -->
+          <div class="mb-4">
+            <button id="btn-embed" type="button" class="w-full py-2.5 px-4 rounded-xl border-2 border-[#b80028] text-[#b80028] hover:bg-[#b80028] hover:text-white font-bold text-xs sm:text-sm transition flex items-center justify-center gap-2">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+              <span>Toggle Embedded Registration / Submission Form</span>
+            </button>
+            <div id="form-embed" class="hidden mt-4 rounded-xl overflow-hidden border-2 border-pink-200 shadow-inner">
+              <iframe id="form-frame" class="w-full h-[650px] bg-white" title="Candidate Submission Form" loading="lazy"></iframe>
+            </div>
+          </div>
+
+          <!-- Dedicated Contact Email & Support Box -->
+          <div class="bg-gradient-to-r from-rose-50 via-pink-50 to-amber-50 rounded-xl p-4 border border-pink-200/80 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="space-y-1">
+              <div class="text-[11px] font-extrabold uppercase tracking-wider text-[#7a003c]">Direct Evaluation &amp; Mentor Email</div>
+              <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm">
+                <span class="font-semibold text-slate-800 flex items-center gap-1.5">
+                  <svg class="w-4 h-4 text-[#b80028]" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                  <a id="card-email-link" href="#" class="text-[#b80028] font-extrabold underline hover:text-[#7a003c]">mentor@bpscmains.in</a>
+                </span>
+              </div>
+            </div>
+            <button id="copy-email-btn" type="button" class="text-xs font-extrabold bg-white border-2 border-pink-300 hover:border-[#b80028] text-[#b80028] px-3.5 py-2 rounded-lg shadow-sm transition flex items-center gap-1.5 self-start sm:self-center shrink-0">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+              <span id="copy-email-label">Copy Email</span>
+            </button>
+          </div>
+        </section>
+
+        <!-- 2. HOW IT WORKS (4-STEP VIBRANT WORKFLOW) -->
+        <section class="vibrant-card border border-pink-100 border-t-4 border-t-[#fb8500] p-6">
+          <div class="flex items-center justify-between gap-2 mb-4">
+            <h2 class="text-xl font-extrabold text-[#7a003c] flex items-center gap-2">
+              <span class="p-2 rounded-lg bg-amber-100 text-[#fb8500]">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              </span>
+              How the Thrice-Weekly Program Works
+            </h2>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="bg-gradient-to-br from-rose-50 to-pink-50 border border-rose-200 rounded-xl p-4 relative overflow-hidden">
+              <span class="inline-block text-[11px] font-black uppercase tracking-wider bg-[#b80028] text-white px-2.5 py-0.5 rounded-full mb-2">Step 1 • Register</span>
+              <div class="font-extrabold text-slate-900 text-base mb-1">Join &amp; Connect</div>
+              <p class="text-xs text-slate-700 leading-relaxed">Join the official Telegram group to receive thrice-weekly question papers, announcements, and model hints.</p>
+            </div>
+
+            <div class="bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200 rounded-xl p-4 relative overflow-hidden">
+              <span class="inline-block text-[11px] font-black uppercase tracking-wider bg-[#fb8500] text-white px-2.5 py-0.5 rounded-full mb-2">Step 2 • Structure</span>
+              <div class="font-extrabold text-slate-900 text-base mb-1">Apply 72nd BPSC Guide</div>
+              <p class="text-xs text-slate-700 leading-relaxed">Use the <strong>Strategy Guide</strong> on the right—write 5–6 numbered points, underline headings, and weave in Bihar data.</p>
+            </div>
+
+            <div class="bg-gradient-to-br from-cyan-50 to-sky-50 border border-cyan-200 rounded-xl p-4 relative overflow-hidden">
+              <span class="inline-block text-[11px] font-black uppercase tracking-wider bg-[#0096c7] text-white px-2.5 py-0.5 rounded-full mb-2">Step 3 • Upload PDF</span>
+              <div class="font-extrabold text-slate-900 text-base mb-1">Submit Thrice a Week</div>
+              <p class="text-xs text-slate-700 leading-relaxed">Scan your handwritten sheets into a clear PDF (<code class="bg-white px-1 py-0.5 rounded border text-[11px] font-mono">Name_Day_Paper.pdf</code>) and upload via Google Form.</p>
+            </div>
+
+            <div class="bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200 rounded-xl p-4 relative overflow-hidden">
+              <span class="inline-block text-[11px] font-black uppercase tracking-wider bg-[#10b981] text-white px-2.5 py-0.5 rounded-full mb-2">Step 4 • Evaluation</span>
+              <div class="font-extrabold text-slate-900 text-base mb-1">Tick-Based Feedback</div>
+              <p class="text-xs text-slate-700 leading-relaxed">Get evaluated copies with point-wise margin ticks, structural feedback, and score breakdowns via Telegram/Email.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3. MANDATORY SUBMISSION & ANSWER SHEET HYGIENE GUIDELINES -->
+        <section class="vibrant-card border border-pink-100 border-t-4 border-t-[#0096c7] p-6">
+          <h2 class="text-xl font-extrabold text-[#3d0043] mb-4 flex items-center gap-2">
+            <span class="p-2 rounded-lg bg-cyan-100 text-[#0096c7]">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </span>
+            PDF Submission &amp; Copy Hygiene Guidelines
+          </h2>
+          <ul class="space-y-3 text-sm text-slate-700">
+            <li class="flex items-start gap-3 bg-slate-50 p-3 rounded-lg border border-slate-200/80">
+              <span class="w-6 h-6 rounded-full bg-[#b80028] text-white font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">1</span>
+              <span><strong>Plain Unruled A4 Paper with Margins:</strong> Write by hand on plain white A4 sheets with left and right margins drawn. <strong class="text-rose-600">Never write answer content inside the margins</strong>—BPSC examiners ignore margin writing.</span>
+            </li>
+            <li class="flex items-start gap-3 bg-slate-50 p-3 rounded-lg border border-slate-200/80">
+              <span class="w-6 h-6 rounded-full bg-[#fb8500] text-white font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">2</span>
+              <span><strong>Mandatory Crossing of Unused Space:</strong> Always draw a cross <strong>(X)</strong> across any unused space on a page before moving to the next question, matching official BPSC answer booklet rules.</span>
+            </li>
+            <li class="flex items-start gap-3 bg-slate-50 p-3 rounded-lg border border-slate-200/80">
+              <span class="w-6 h-6 rounded-full bg-[#0096c7] text-white font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">3</span>
+              <span><strong>First Page Header Details:</strong> Clearly write your <strong>Full Name, Telegram ID / Email, Submission Day, and Questions Attempted</strong> at the top of Page 1.</span>
+            </li>
+            <li class="flex items-start gap-3 bg-slate-50 p-3 rounded-lg border border-slate-200/80">
+              <span class="w-6 h-6 rounded-full bg-[#10b981] text-white font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">4</span>
+              <span><strong>Standard PDF File Naming:</strong> Scan in portrait orientation into one single PDF (Max 10 MB) named <code class="bg-rose-100 text-[#b80028] px-1.5 py-0.5 rounded text-xs font-mono font-bold">YourName_Day_Paper.pdf</code>.</span>
+            </li>
+          </ul>
+        </section>
+
+      </div>
+
+      <!-- ===================================================================== -->
+      <!-- RIGHT COLUMN: 72nd BPSC MAINS ANSWER WRITING STRATEGY GUIDE (6 Cols)  -->
+      <!-- ===================================================================== -->
+      <aside class="lg:col-span-6 lg:sticky lg:top-6">
+        <div class="vibrant-card border-2 border-[#b80028] overflow-hidden shadow-2xl">
+          
+          <!-- Guide Column Header -->
+          <div class="hero-gradient text-white p-5 border-b-4 border-[#ffb703]">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-1.5">
+              <span class="text-[11px] font-black uppercase tracking-widest text-[#111] bg-[#ffb703] px-3 py-0.5 rounded-full shadow">
+                Evidence-Based Evaluation Guide
+              </span>
+              <span class="text-[11px] font-semibold text-amber-200 bg-white/10 px-2.5 py-0.5 rounded-full">
+                68th Essay + 69th GS-1 &amp; GS-2 (736 Pages)
+              </span>
+            </div>
+            <h2 class="text-lg sm:text-xl font-black leading-snug">
+              72nd BPSC Mains Answer Writing Strategy Guide
+            </h2>
+            <p class="text-xs text-pink-100 mt-1">
+              Derived directly from examiner tick-marks, question-wise scores, and evaluated BPSC copies.
+            </p>
+          </div>
+
+          <!-- Interactive 3-Tab Navigation (No Checklist Tab) -->
+          <div class="grid grid-cols-3 bg-slate-100 border-b border-slate-200 text-xs sm:text-sm font-extrabold text-center">
+            <button onclick="switchGuideTab('scoring')" id="tab-btn-scoring" class="py-3.5 px-2 border-b-4 border-[#b80028] text-[#b80028] bg-white transition">
+              1. Scoring &amp; Levers
+            </button>
+            <button onclick="switchGuideTab('ticks')" id="tab-btn-ticks" class="py-3.5 px-2 border-b-4 border-transparent text-slate-600 hover:text-[#b80028] transition">
+              2. Ticks vs Penalties
+            </button>
+            <button onclick="switchGuideTab('subjects')" id="tab-btn-subjects" class="py-3.5 px-2 border-b-4 border-transparent text-slate-600 hover:text-[#b80028] transition">
+              3. Paper-Wise Guide
+            </button>
+          </div>
+
+          <!-- Guide Tab Panels Container -->
+          <div class="p-5 max-h-[760px] overflow-y-auto guide-scroll space-y-5">
+
+            <!-- =============================================================== -->
+            <!-- TAB 1: SCORING ARCHITECTURE & 3 PRIORITY ACTIONS                -->
+            <!-- =============================================================== -->
+            <div id="tab-panel-scoring" class="space-y-4">
+              
+              <!-- Critical Finding Alert -->
+              <div class="bg-gradient-to-r from-rose-600 to-[#b80028] text-white rounded-xl p-4 shadow-md">
+                <div class="flex items-center justify-between gap-2 mb-1">
+                  <span class="text-[11px] font-black uppercase tracking-widest bg-[#ffb703] text-slate-950 px-2.5 py-0.5 rounded-full">
+                    The Critical Finding
+                  </span>
+                  <span class="text-xs font-bold text-amber-200">GS-1: 169/300 • GS-2: 143/300</span>
+                </div>
+                <p class="text-xs sm:text-sm leading-relaxed font-medium mt-1">
+                  Skipping 38-mark long questions is the <strong>#1 mark leak (90–100 marks lost)</strong>. Competent writing on attempted long answers consistently earns <strong>19–23/38 (&gt;50%)</strong>, and even a structured <strong>1.5-page answer earns 14–18/38</strong>. Never leave a long question blank!
+                </p>
+              </div>
+
+              <!-- Part 1: The Scoring Architecture -->
+              <div>
+                <h3 class="text-xs font-black uppercase tracking-wider text-[#7a003c] mb-2.5">
+                  Part 1 • The Examiner Scoring Architecture
+                </h3>
+                <div class="space-y-3">
+                  <!-- Short Answers -->
+                  <div class="border-l-4 border-l-[#fb8500] border border-amber-200 rounded-xl p-3.5 bg-amber-50/50">
+                    <div class="flex flex-wrap justify-between items-center gap-1 mb-1">
+                      <span class="font-extrabold text-sm text-slate-900">Short Answers (7–8 Marks)</span>
+                      <span class="text-[11px] font-extrabold bg-[#fb8500] text-white px-2.5 py-0.5 rounded-full">Observed: 2–8/8 • ~8 Mins</span>
+                    </div>
+                    <p class="text-xs text-slate-700 leading-relaxed">
+                      Examiners use a <strong>"1 valid point = 1 tick = 1–1.5 marks"</strong> model. Write <strong>5–6 distinct, examiner-tickable points</strong> (each 2–3 lines of substance) to score 7–8/8. Tight structure alone guarantees 4.5–5.5/8.
+                    </p>
+                  </div>
+
+                  <!-- Long Answers -->
+                  <div class="border-l-4 border-l-[#b80028] border border-rose-200 rounded-xl p-3.5 bg-rose-50/50">
+                    <div class="flex flex-wrap justify-between items-center gap-1 mb-1">
+                      <span class="font-extrabold text-sm text-slate-900">Long Answers (38 Marks)</span>
+                      <span class="text-[11px] font-extrabold bg-[#b80028] text-white px-2.5 py-0.5 rounded-full">Observed: 0–23/38 • ~30 Mins</span>
+                    </div>
+                    <p class="text-xs text-slate-700 leading-relaxed">
+                      Scored holistically with point-density awareness. Sketch a <strong>3–4 sub-theme outline</strong> in 30 seconds and write 8–10 lines per sub-section. Thin answers score near zero, while 1.5 structured pages earn <strong>14–18/38</strong>.
+                    </p>
+                  </div>
+
+                  <!-- Essay -->
+                  <div class="border-l-4 border-l-[#0096c7] border border-cyan-200 rounded-xl p-3.5 bg-cyan-50/50">
+                    <div class="flex flex-wrap justify-between items-center gap-1 mb-1">
+                      <span class="font-extrabold text-sm text-slate-900">Essay Paper (100 Marks × 2 Attempted)</span>
+                      <span class="text-[11px] font-extrabold bg-[#0096c7] text-white px-2.5 py-0.5 rounded-full">Observed: 54–63/100</span>
+                    </div>
+                    <p class="text-xs text-slate-700 leading-relaxed">
+                      Topic selection strategy is half the battle. Attempt the 2 topics where you can generate <strong>5+ multi-dimensional angles + mandatory Bihar governance/culture examples</strong> within 3 minutes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Part 2: Three Priority Actions for 72nd Mains -->
+              <div class="border border-emerald-200 rounded-xl overflow-hidden shadow-sm">
+                <div class="bg-gradient-to-r from-emerald-600 to-teal-600 text-white text-xs font-black uppercase tracking-wider px-4 py-2.5 flex justify-between items-center">
+                  <span>Three Priority Actions for 72nd BPSC Mains</span>
+                  <span>Marks Impact</span>
+                </div>
+                <div class="divide-y divide-emerald-100 bg-emerald-50/30 text-xs">
+                  <div class="p-3 flex justify-between items-center gap-2">
+                    <div>
+                      <span class="inline-block bg-rose-600 text-white font-black text-[10px] px-2 py-0.5 rounded mr-1.5">#1 HIGHEST</span>
+                      <span class="font-bold text-slate-800">Attempt every 38-mark long question</span>
+                      <span class="block text-[11px] text-slate-600 mt-0.5">Even a 1.5-page structured answer earns ~15/38</span>
+                    </div>
+                    <span class="font-black text-emerald-800 bg-emerald-100 border border-emerald-300 px-2.5 py-1 rounded-lg shrink-0">+60–80 Marks</span>
+                  </div>
+                  <div class="p-3 flex justify-between items-center gap-2">
+                    <div>
+                      <span class="inline-block bg-amber-500 text-slate-950 font-black text-[10px] px-2 py-0.5 rounded mr-1.5">#2 HIGH</span>
+                      <span class="font-bold text-slate-800">Expand short-answer bullets to 2–3 lines</span>
+                      <span class="block text-[11px] text-slate-600 mt-0.5">Avoid 1-liner bullets (which score only 2/8)</span>
+                    </div>
+                    <span class="font-black text-emerald-800 bg-emerald-100 border border-emerald-300 px-2.5 py-1 rounded-lg shrink-0">+20–30 Marks</span>
+                  </div>
+                  <div class="p-3 flex justify-between items-center gap-2">
+                    <div>
+                      <span class="inline-block bg-sky-600 text-white font-black text-[10px] px-2 py-0.5 rounded mr-1.5">#3 MEDIUM</span>
+                      <span class="font-bold text-slate-800">Add Bihar-specific data in GS-2 / Economy</span>
+                      <span class="block text-[11px] text-slate-600 mt-0.5">Use Bihar Economic Survey 2025-26, Jeevika, SFC</span>
+                    </div>
+                    <span class="font-black text-emerald-800 bg-emerald-100 border border-emerald-300 px-2.5 py-1 rounded-lg shrink-0">+15–25 Marks</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- =============================================================== -->
+            <!-- TAB 2: WHAT EXAMINERS REWARD VS PENALISE                        -->
+            <!-- =============================================================== -->
+            <div id="tab-panel-ticks" class="hidden space-y-4">
+              
+              <!-- What Examiners Are Rewarding (Vibrant Emerald) -->
+              <div class="border-2 border-[#10b981] bg-emerald-50/60 rounded-xl p-4">
+                <h3 class="text-xs sm:text-sm font-black uppercase tracking-wider text-emerald-900 mb-3 flex items-center gap-2">
+                  <span class="w-6 h-6 rounded-full bg-[#10b981] text-white flex items-center justify-center font-bold">✓</span>
+                  <span>What Examiners Are Rewarding (6 Tick Drivers)</span>
+                </h3>
+                <ul class="space-y-2.5 text-xs text-slate-800 leading-relaxed">
+                  <li><strong>1. Point-Wise Visual Hierarchy:</strong> Numbered points <code class="bg-white px-1.5 py-0.5 rounded border font-bold">1), 2), 3)</code>, underlined subheadings (<u>Social:</u>, <u>Significance →</u>), and arrow connectors (<code class="bg-white px-1.5 py-0.5 rounded border font-bold">→</code>) earn left-margin ticks.</li>
+                  <li><strong>2. Cause → Event → Significance Structure:</strong> Used in Santhal (5/8) &amp; Champaran (4.5/8). Citing exact numbers &amp; leader names (<em>"50,000 tribals from 400 villages"</em>) earns dedicated ticks.</li>
+                  <li><strong>3. Quotes with Named Attribution:</strong> Quoting S. Jaishankar (MEA) in the India-G20 answer (20/38) earned a direct tick. Use 1–2 named expert/minister/committee quotes per long answer.</li>
+                  <li><strong>4. Explicit Concluding Lines:</strong> Ending every answer with <em>"Therefore..."</em> or <em>"Thus..."</em> signals complete, structured thinking.</li>
+                  <li><strong>5. Breadth Across Sub-Themes:</strong> Connecting V-20 island nations, Solar Alliance growth, and renewable multilateralism earned separate ticks—breadth beats single-thread depth.</li>
+                  <li><strong>6. Crossing Unused Space:</strong> Crossing <strong>(X)</strong> unused blank space on every page is a mandatory hygiene requirement.</li>
+                </ul>
+              </div>
+
+              <!-- What Examiners Are Penalising (Vibrant Coral Rose) -->
+              <div class="border-2 border-[#f43f5e] bg-rose-50/60 rounded-xl p-4">
+                <h3 class="text-xs sm:text-sm font-black uppercase tracking-wider text-rose-900 mb-3 flex items-center gap-2">
+                  <span class="w-6 h-6 rounded-full bg-[#f43f5e] text-white flex items-center justify-center font-bold">✗</span>
+                  <span>What Examiners Are Penalising (6 Mark Killers)</span>
+                </h3>
+                <ul class="space-y-2.5 text-xs text-slate-800 leading-relaxed">
+                  <li><strong>1. Thin Single-Liner Short Answers:</strong> BNSS 2023 (8M) scored only <strong>2/8</strong> despite 6 points because each point was just 1 line. Every point must have 2–3 lines of substance.</li>
+                  <li><strong>2. Skipping Long Questions (Zero Pattern):</strong> Leaving 38-mark questions blank is the most catastrophic error when 1.5 structured pages easily earn 14–18/38.</li>
+                  <li><strong>3. Flowing Prose Without Sub-Structure:</strong> Paragraph-style short answers prevent individual point ticking and lose <strong>1.5–2 marks</strong> per 8-mark question.</li>
+                  <li><strong>4. Missing the "Critical" Dimension:</strong> In <em>"Critically describe the amendment process"</em> (scored 4/8), omitting criticism (rigidity, simple majority misuse, Basic Structure Doctrine) caps marks at ~50%.</li>
+                  <li><strong>5. No Bihar-Specific Governance Content:</strong> Staying only at the national level without citing SFC, Bihar Panchayati Raj Act, Jeevika, or Bihar Economic Survey 2025-26 keeps scores average.</li>
+                  <li><strong>6. Writing in the Margin:</strong> Any content written in the designated margin is ignored by the evaluator.</li>
+                </ul>
+              </div>
+
+            </div>
+
+            <!-- =============================================================== -->
+            <!-- TAB 3: SUBJECT-SPECIFIC DOS & DON'TS                            -->
+            <!-- =============================================================== -->
+            <div id="tab-panel-subjects" class="hidden space-y-3.5">
+              
+              <!-- GS Paper I -->
+              <div class="border border-rose-200 bg-gradient-to-br from-white to-rose-50/60 rounded-xl p-4">
+                <div class="inline-block text-[11px] font-black uppercase tracking-wider bg-[#b80028] text-white px-2.5 py-0.5 rounded-md mb-2">
+                  GS Paper I • History, Culture &amp; Geography
+                </div>
+                <div class="space-y-1.5 text-xs text-slate-800">
+                  <p><strong class="text-emerald-700">✓ DO:</strong> Use the 3-layer History structure: <code class="bg-white px-1.5 py-0.5 rounded border font-semibold">Colonial Context → Event/Movement → Significance/Legacy</code>. Name leaders, participant counts &amp; districts.</p>
+                  <p><strong class="text-emerald-700">✓ DO:</strong> Use arrow timelines: <code class="bg-white px-1.5 py-0.5 rounded border font-semibold">1905 → Partition of Bengal → 1906 → Muslim League → 1907 → Surat Split</code>.</p>
+                  <p><strong class="text-rose-700">✗ DON'T:</strong> Don't stop after listing causes in a revolt question—omitting the Significance section loses 2 full marks.</p>
+                </div>
+              </div>
+
+              <!-- GS Paper II -->
+              <div class="border border-amber-200 bg-gradient-to-br from-white to-amber-50/60 rounded-xl p-4">
+                <div class="inline-block text-[11px] font-black uppercase tracking-wider bg-[#fb8500] text-slate-950 px-2.5 py-0.5 rounded-md mb-2">
+                  GS Paper II • Polity, Governance &amp; Social Issues
+                </div>
+                <div class="space-y-1.5 text-xs text-slate-800">
+                  <p><strong class="text-emerald-700">✓ DO:</strong> Include (a) Article/Amendment, (b) Landmark SC Case, and (c) Practical implementation example. Use <code class="bg-white px-1.5 py-0.5 rounded border font-semibold">Problem → Policy → Implementation Gap → Way Forward</code>.</p>
+                  <p><strong class="text-emerald-700">✓ DO:</strong> Cite NFHS data, NITI Aayog reports, SFC recommendations, Bihar Panchayati Raj Act, ATMA, &amp; Jeevika.</p>
+                  <p><strong class="text-rose-700">✗ DON'T:</strong> Never end with generic lines like <em>"Govt should take steps."</em> Conclude with named Bihar/national policy schemes.</p>
+                </div>
+              </div>
+
+              <!-- Economy, Science & Tech, Environment -->
+              <div class="border border-cyan-200 bg-gradient-to-br from-white to-cyan-50/60 rounded-xl p-4">
+                <div class="inline-block text-[11px] font-black uppercase tracking-wider bg-[#0096c7] text-white px-2.5 py-0.5 rounded-md mb-2">
+                  Economy, Science &amp; Tech &amp; Environment
+                </div>
+                <div class="space-y-1.5 text-xs text-slate-800">
+                  <p><strong class="text-emerald-700">✓ DO (Economy):</strong> Follow <code class="bg-white px-1.5 py-0.5 rounded border font-semibold">Concept → Current Status (Data) → Bihar Angle → Challenges → Way Forward</code> with Bihar Economic Survey 2025-26 &amp; Union Budget 2025-26 figures.</p>
+                  <p><strong class="text-emerald-700">✓ DO (S&amp;T / Env):</strong> 1-line definition → 4–5 real-world applications (1 tick each) → ISRO/DRDO/India relevance → Bihar Ganga plains, Kosi floods, Farakka Barrage &amp; SAPCC.</p>
+                  <p><strong class="text-rose-700">✗ DON'T:</strong> Avoid vague claims like <em>"GDP growth is low."</em> Write specific numbers from the Bihar Economic Survey.</p>
+                </div>
+              </div>
+
+              <!-- Essay Paper -->
+              <div class="border border-purple-200 bg-gradient-to-br from-white to-purple-50/60 rounded-xl p-4">
+                <div class="inline-block text-[11px] font-black uppercase tracking-wider bg-[#7a003c] text-white px-2.5 py-0.5 rounded-md mb-2">
+                  Essay Paper (100 Marks × 2 Essays)
+                </div>
+                <div class="space-y-1.5 text-xs text-slate-800">
+                  <p><strong class="text-emerald-700">✓ DO:</strong> Open with a striking quote, paradox, or news hook. Use a <strong>5-paragraph minimum framework with subheadings</strong>: Intro → Economic/Political → Social/Historical → Bihar/India Governance (e-Shasan Bihar, Voter Helpline, BPDA) → 10-Year Vision Conclusion.</p>
+                  <p><strong class="text-rose-700">✗ DON'T:</strong> Don't write purely literary/philosophical essays lacking policy depth—BPSC evaluators are bureaucracy-track examiners.</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Guide Footer Mantra -->
+          <div class="bg-gradient-to-r from-[#ffb703] via-amber-400 to-[#fb8500] px-5 py-3 text-center">
+            <p class="text-xs font-black text-slate-950 uppercase tracking-wide">
+              Core 72nd Mains Priority: Attempt Every Question • Structure Every Answer • Lead Every Point with Data
+            </p>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- FOOTER (No FAQ Section) -->
+  <footer class="topbar-gradient text-pink-100 mt-12 py-6 px-4 text-center text-xs sm:text-sm border-t-2 border-[#ffb703]">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        &copy; <span id="yr"></span> <strong>72nd BPSC Mains Answer Writing Portal</strong>. All rights reserved.
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <a id="footer-telegram-link" href="#" target="_blank" rel="noopener" class="text-[#ffb703] font-bold hover:underline">Join Telegram Group</a>
+        <span class="opacity-40">•</span>
+        <a id="footer-email-link" href="#" class="text-cyan-300 font-bold hover:underline">Email Mentor</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================= -->
+  <!-- EASY ADMIN CONFIGURATION SCRIPT                                         -->
+  <!-- ======================================================================= -->
+  <script>
+    // =========================================================================
+    // ADMIN CONFIG: PASTE YOUR GOOGLE FORM, TELEGRAM & EMAIL DETAILS BELOW
+    // =========================================================================
+    const CONFIG = {
+      // 1. Paste your Google Form link (where candidates upload their PDF answer sheets)
+      googleFormUrl: "https://forms.gle/7AygwovSy2AkvRSx7",
+
+      // 2. Optional: If using an embedded form without file upload, paste the embed src URL here
+      googleFormEmbedUrl: "",
+
+      // 3. Paste your Telegram Group / Channel invite link
+      telegramUrl: "https://t.me/+A7BO8TQPWVI2ODFl",
+
+      // 4. Enter your official email address for candidate queries
+      contactEmail: "ushikhar2802@gmail.com"
+    };
+    // =========================================================================
+
+    const isConfigured = (val) => val && !val.startsWith("PASTE_") && val !== "yourname@gmail.com";
+
+    // Wire up Google Form & Telegram Links
+    const regBtn = document.getElementById("btn-register");
+    const tgBtn = document.getElementById("btn-telegram");
+    const topTgLink = document.getElementById("top-telegram-link");
+    const footerTgLink = document.getElementById("footer-telegram-link");
+    const embedBtn = document.getElementById("btn-embed");
+    const noticeBanner = document.getElementById("config-notice");
+
+    if (CONFIG.googleFormUrl && !CONFIG.googleFormUrl.startsWith("PASTE_")) {
+      regBtn.href = CONFIG.googleFormUrl;
+    }
+    if (CONFIG.telegramUrl && !CONFIG.telegramUrl.startsWith("PASTE_")) {
+      tgBtn.href = CONFIG.telegramUrl;
+      topTgLink.href = CONFIG.telegramUrl;
+      footerTgLink.href = CONFIG.telegramUrl;
+    }
+
+    // Optional Embed Form Toggle Logic
+    const embedSrc = CONFIG.googleFormEmbedUrl || (isConfigured(CONFIG.googleFormUrl) ? CONFIG.googleFormUrl : "");
+    if (!CONFIG.googleFormEmbedUrl) {
+      embedBtn.style.display = "none";
+    }
+    embedBtn.addEventListener("click", () => {
+      const box = document.getElementById("form-embed");
+      const frame = document.getElementById("form-frame");
+      if (!frame.src && embedSrc) frame.src = embedSrc;
+      box.classList.toggle("hidden");
+    });
+
+    // Wire up Email Address Links
+    const emailAddr = CONFIG.contactEmail || "mentor@bpscmains.in";
+    const mailtoHref = "mailto:" + emailAddr + "?subject=72nd%20BPSC%20Mains%20Answer%20Writing%20Query";
+    document.getElementById("top-email-link").href = mailtoHref;
+    document.getElementById("top-email-text").textContent = emailAddr;
+    document.getElementById("card-email-link").href = mailtoHref;
+    document.getElementById("card-email-link").textContent = emailAddr;
+    document.getElementById("footer-email-link").href = mailtoHref;
+    document.getElementById("footer-email-link").textContent = emailAddr;
+
+    // Show Admin Reminder if placeholders are still present
+    if (!isConfigured(CONFIG.googleFormUrl) || !isConfigured(CONFIG.telegramUrl)) {
+      noticeBanner.classList.remove("hidden");
+    }
+
+    // Copy Email Button Logic (Iframe safe)
+    document.getElementById("copy-email-btn").addEventListener("click", () => {
+      const tempInput = document.createElement("textarea");
+      tempInput.value = emailAddr;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand("copy");
+      document.body.removeChild(tempInput);
+
+      const label = document.getElementById("copy-email-label");
+      label.textContent = "Copied!";
+      setTimeout(() => { label.textContent = "Copy Email"; }, 2000);
+    });
+
+    // Guide Column Tab Switcher (3 Tabs: scoring, ticks, subjects)
+    function switchGuideTab(tabName) {
+      const tabs = ["scoring", "ticks", "subjects"];
+      tabs.forEach((t) => {
+        const panel = document.getElementById("tab-panel-" + t);
+        const btn = document.getElementById("tab-btn-" + t);
+        if (t === tabName) {
+          panel.classList.remove("hidden");
+          btn.className = "py-3.5 px-2 border-b-4 border-[#b80028] text-[#b80028] bg-white transition";
+        } else {
+          panel.classList.add("hidden");
+          btn.className = "py-3.5 px-2 border-b-4 border-transparent text-slate-600 hover:text-[#b80028] transition";
+        }
+      });
+    }
+
+    document.getElementById("yr").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
